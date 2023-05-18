@@ -1,0 +1,31 @@
+Write a program in Python using PySimpleGUI for the following algorithm: We can design the finite automaton M as follows:
+
+The set of states Q = {q0, q1, q2}, where q0 is the initial state and q2 is the only accepting state.
+The input alphabet Σ = {0, 1}.
+The transition function δ is defined as follows:
+δ(q0, 0) = q1, δ(q0, 1) = q0
+δ(q1, 0) = q2, δ(q1, 1) = q1
+δ(q2, 0) = q1, δ(q2, 1) = q2
+The initial state is q0.
+The set of accepting states F = {q2}.
+
+Intuitively, the automaton M starts in state q0 and reads the input symbols one by one. If the input string has odd length 
+and the middle symbol is 0, then the automaton will end up in the accepting state q2. Otherwise, it will end up in a 
+non-accepting state.
+
+The transition function δ can be visualized as a directed graph, where each state is represented by a node and each transition 
+is represented by a labeled edge. Here is the graph for the automaton M:
+
+      0       1
+   +----> q1 +----> q1
+   |         |       
+   |         |       
+   |         v       
+q0 +----> q2 +----> q2
+In the graph, the arrows represent the transitions, and the labels on the arrows indicate the input symbols that trigger the 
+transitions. The initial state is represented by a circle, and the accepting state is represented by a double circle.
+
+This program creates a GUI with a text input for the user to enter a binary string and two buttons, "Check" and "Quit". 
+When the user clicks "Check", the program simulates the finite automaton M on the input string and outputs "Accepted" or "Rejected" 
+depending on whether the final state is accepting or not. The program uses the transition function transition to compute the next 
+state given the current state and input symbol. The program also uses the PySimpleGUI library to create the GUI and handle user input.

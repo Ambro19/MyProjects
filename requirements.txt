@@ -1,0 +1,9 @@
+#Requirement is for testing, We should keep track of he dependencies that a prject has, so that when we share
+#the project with someone else they can store the same dependencies. 
+
+#Different dependecies frequently used for web applications:
+flask==1.0.0    #To store the latest version do this: flask>1.1.2, < 2.0
+request==
+gununicorn 
+
+#Run 'pip instal -r requirements.txt' to intall your project requirements.
