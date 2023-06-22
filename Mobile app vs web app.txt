@@ -1,0 +1,4 @@
+Mobile app vs web app
+
+For the user to determine their architure system's architecture use the command "arch".
+Then, from determine the user system's architecture clean their Operating System (OS) by implementing the following methods in Java programming language :
